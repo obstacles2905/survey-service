@@ -1,0 +1,51 @@
+{
+  "name": "survey-service",
+  "version": "1.0.0",
+  "description": "survey-service",
+  "main": "server.ts",
+  "scripts": {
+    "build": "yarn install && tsc",
+    "start": "ts-node server.ts",
+    "test": "jest --config jest.config.js",
+    "watch-ts": "tsc && nodemon server.ts"
+  },
+  "author": "Pismenniy Nikita",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^27.0.2",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/lodash": "^4.14.185",
+    "@types/moment": "^2.13.0",
+    "@types/supertest": "^2.0.12",
+    "@uppy/core": "^2.1.5",
+    "@uppy/webcam": "^2.0.5",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cronstrue": "^1.112.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "http-status-codes": "^2.1.4",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.2.4",
+    "ts-jest": "^27.0.7",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.2.3"
+  }
+}
