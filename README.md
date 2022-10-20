@@ -47,7 +47,9 @@ You can change them in the .env file
 yarn install
 ```
 
-2. Start an application
+2. Create an .env file by coping the .env.example file with according values
+
+3. Start an application
 
 ```bash
 yarn watch-ts
