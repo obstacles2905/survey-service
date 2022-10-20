@@ -29,15 +29,27 @@ Entity storing all applyings made by users
 2. GET /applyings/:userId - get all applyings made by user
 3. POST /applyings - create an applying and answer on questions
 
+### Auth
+
+Most of the endpoints a secured by a jwt guard. To get your jwt you need to create a new user with a /POST users endpoint
+All jwts are stored in the authTokens collection
+
+
 ## Environment
 Required environment variables
 ```bash
 NODE_ENV
 
+MONGO_HOST
+
+MONGO_PORT
+
+SECRET
+
 APPLICATION_PORT
 ```
 
-You can change them in the .env file
+You can change them by copying the .env.example file and putting your variables
 
 ## How to run
 
@@ -47,9 +59,7 @@ You can change them in the .env file
 yarn install
 ```
 
-2. Create an .env file by coping the .env.example file with according values
-
-3. Start an application
+2. Start an application
 
 ```bash
 yarn watch-ts
